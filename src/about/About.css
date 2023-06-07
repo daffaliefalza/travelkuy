@@ -1,0 +1,89 @@
+.about {
+  padding: 5em 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__title h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+.about__title h2::after {
+  content: "";
+  width: 80%;
+  background-color: #fc036b;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+}
+
+.about__slogan {
+  width: 50%;
+  margin: 2em auto;
+  color: #a3a3a3;
+  font-style: italic;
+  text-align: center;
+}
+
+.about__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  text-align: center;
+  margin: 5em 0;
+}
+
+.about img {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.bottom-team {
+  grid-column: span 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fafafa;
+  padding: 1em 0.2em;
+}
+
+.card h2 {
+  margin-top: 5px;
+  color: #639ab8;
+}
+
+.card h3 {
+  margin: 1em 0;
+  color: #6e6e6e;
+}
+
+.card p {
+  color: #6c6c6c;
+}
+
+@media (max-width: 950px) {
+  .about__gallery,
+  .bottom-team {
+    display: block;
+    width: 100%;
+  }
+
+  .about__gallery p {
+    padding: 0 1em;
+  }
+}

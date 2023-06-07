@@ -1,0 +1,35 @@
+.hero {
+  background-image: url("../assets/img/pexels-joyston-judah-933054.jpg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.hero h2::after {
+  content: "";
+  width: 80%;
+  background-color: #fc036b;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1em;
+  letter-spacing: 1px;
+}
